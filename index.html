@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!--Importando Matererialize CSS framework BAIXADO -->
-    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.css"><!--versão 1.0-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     
@@ -13,15 +15,139 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
+<body class="container"><!--centraliza em 70% da página-->
+    <div class="card-panel hoverable pink darken-1 white-text text-darken-1 z-depth-5 flow-text"> Hello Word !!</div><br>
+
+    <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: auto; left: auto;">
+        <a class="btn-floating btn-large red">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+      </div>
 
 
-<body>
-    <div class="card-panel pink darken-1 white-text text-darken-1 z-depth-5 flow-text"> Hello Word !!</div>
+    <button type="" class="btn-small waves-effect waves-light left red"> <i class="material-icons right">face</i> pequeno</button>
+    <button class="btn-large waves-effect" type=""><i class="material-icons left">cloud</i>grande</button>
+    <button class="btn-floating  btn-large waves-effect right" type=""><i class="material-icons left">add</i></button>
+    <button type="" class="btn-small disabled "><i class="material-icons">send</i>desabilitado</button>
 
-    <p class="flow-text">the printing and typesetting industry. Lorem Ipsum has been the
+    <ul class="pagination">
+        <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active blue"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+
+    <nav class="nav-wrapper">
+        <div class="col s12">
+            <a href="#" class="breadcrumb">Primeiro</a>
+            <a href="#" class="breadcrumb">Segundo</a>
+            <a href="#" class="breadcrumb">Terceiro</a>
+        </div>
+    </nav>
+
+    <i class="material-icons small green circle">done</i><!--para usar os icones temos que importar o CDN na header-->
+    <i class="material-icons medium">chat</i>
+    <i class="material-icons large">backup</i>
+    <i class="material-icons large ">delete</i>
+
+    <h3 class="hoverable">
+        Ao passar o mause em cima adiciona um efeito de sombra acima !!
+    </h3>
+
+    <h5 class="truncate">
+        Texto grande sendo truncado industry. Lorem Ipsum has been the
         industry's standard dummy text ever since the 1500s, when an unknown
          printer took a galley of type and scrambled it to make a type specimen book.
-       It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </h5><br>
+
+    <div class="row">
+        <div class="col s12 hide-on-small-only red">
+            Ocultando para despositivos móveis.
+        </div>
+        <div class="col l12 blue hide-on-med-only ">
+            Ocultando para tablets.
+        </div>
+        <div class="col l12 yellow hide-on-large-only ">
+            Ocultando para PC.            
+
+        </div>
+    </div>
+
+    <div class="valign-wrapper">
+        <h5 class="left-align">
+            Texto sendo alinhado à esquerda.
+        </h5>
+    </div>
+    <div>
+        <h5 class="right-align">
+            Testo sendo alinhado à direita
+        </h5>
+    </div>
+    <div>
+        <h5 class="center-align">
+            Texto sendo alinhado ao centro.
+        </h5>
+    </div>
+
+    <div class="divider red"></div> <!--divide com uma linha-->
+        <div class="section"><!--apenas preenche a margem superior e inferior-->
+            <h4>Seção 1</h4>
+            <p>Está é uma seção.</p>
+        </div>
+
+    <div class="divider red"></div>
+        <div class="section"><!--apenas preenche a margem superior e inferior-->
+            <h4>seção 2</h4>
+            <p>Está é uma seção.</p>
+        </div>
+
+    <p class="flow-text">the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknow
+    <div class="row"><!--aqui é a "linha"-->
+        <div class="col s12 m4 l12 red"> <!-- col=colunas  s=small (tela pequenas) m=medium (telas medias, tablets) l=telas grandes (pc) -->
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+         printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+        <div class="col s12 m4 l12 blue">
+            the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+         printer took a galley of type and scrambled it to make a type specimen book.
+       
+        </div>
+        <div class="col s12 m4 l12 green">
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+         printer took a galley of type and scrambled it to make a type specimen book.
+       
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s6 grey offset-s2"><!--offset = desloca colunas-->
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+         printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+        <div class="col s6 pink push-s1"><!--push= pucha uma tabela-->
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+        <div class="col s6 blue pull-s1"><!--pull= empurra uma tabela-->
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+    </div>
 
 </body>
 
@@ -37,14 +163,22 @@
 
 <img src="img/logo1.jpg" class="responsive-img circle"> <br> <!--Deixa a imagem responsiva e circular-->
 
-<div class="video-container"> <!--Essa classe deixa o video responsivo-->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/nic-7fTnTgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+              direction: 'top'
+            });
+          }); 
+</script> -->
 
 <!--O jquery tem que vim antes do JS-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 <!--Importando Matererialize JS framework (BAIXADO) -->
-<script src="js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="js/materialize.js"></script> <!--versão 1.0-->
+<script src="js/script.js"></script>
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 
