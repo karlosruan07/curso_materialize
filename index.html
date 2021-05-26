@@ -6,179 +6,365 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--Importando Matererialize CSS framework BAIXADO -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!--versão 1.0-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="css/materialize.css"><!--versão 1.0-->
+
     <link rel="stylesheet" href="css/custom.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-    
+
     <!--Importando Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
+
+    <title>Materialize</title>
 </head>
-<body class="container"><!--centraliza em 70% da página-->
-    <div class="card-panel hoverable pink darken-1 white-text text-darken-1 z-depth-5 flow-text"> Hello Word !!</div><br>
-
-    <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: auto; left: auto;">
-        <a class="btn-floating btn-large red">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul>
-          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+<body>
+    <header>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
         </ul>
-      </div>
+    
+        <div class="navbar-fixed">
+            <nav class="">
+                <div class="nav-wrapper container">
+                    <a href="#!" class="brand-logo">Logo</a>
+    
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    
+                    <!-- <a href="#" class="right hide-on-large-only" onclick="search_funcao()"><i class="material-icons">search</i></a> -->
+    
+    
+                    <ul class="right hide-on-med-and-down">
+    
+                        <li>
+                            <form class="hide-on-med-and-down">
+                                <div class="input-field">
+                                    <input id="search" type="search" required placeholder="Digite para pesquisar">
+                                    <label class="label-icon" for="search"><i
+                                            class="material-icons right">search</i></label>
+                                    <i class="material-icons">close</i>
+                                </div>
+                            </form>
+                        </li>
+    
+                        <li><a href="#">Component</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">Mobile</a></li>
+    
+                        <ul class="right hide-on-med-and-down">
+    
+                            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                                    data-beloworigin="true">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+                            </li>
+                        </ul>
+                    </ul>
+    
+                </div>
+    
+                <div class="nav-content container">
+    
+                    <div class="nav-content">
+                        <span class="nav-title"></span>
+    
+    
+    
 
-
-    <button type="" class="btn-small waves-effect waves-light left red"> <i class="material-icons right">face</i> pequeno</button>
-    <button class="btn-large waves-effect" type=""><i class="material-icons left">cloud</i>grande</button>
-    <button class="btn-floating  btn-large waves-effect right" type=""><i class="material-icons left">add</i></button>
-    <button type="" class="btn-small disabled "><i class="material-icons">send</i>desabilitado</button>
-
-    <ul class="pagination">
-        <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
-        <li class="active blue"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-    </ul>
-
-    <nav class="nav-wrapper">
-        <div class="col s12">
-            <a href="#" class="breadcrumb">Primeiro</a>
-            <a href="#" class="breadcrumb">Segundo</a>
-            <a href="#" class="breadcrumb">Terceiro</a>
+                
+                        
+    
+                    </div>
+    
+            </nav>
+    
         </div>
-    </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+            <li>
+                <nav>
+    
+                    <div class="nav-wrapper white z-depth-1">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons"
+                                        id="search">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </li>
+        </ul>
+    </header>
 
-    <i class="material-icons small green circle">done</i><!--para usar os icones temos que importar o CDN na header-->
-    <i class="material-icons medium">chat</i>
-    <i class="material-icons large">backup</i>
-    <i class="material-icons large ">delete</i>
+    <main class="container">
 
-    <h3 class="hoverable">
-        Ao passar o mause em cima adiciona um efeito de sombra acima !!
-    </h3>
+        <div class="fixed-action-btn horizontal click-to-toggle">
+            <a class="btn-floating btn-large green pulse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            </ul>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col s12 m4 l4">
+                <div class="card blue-grey center">
+                    <div class="card-image">
+                        <img src="img/django.png" alt="">
+                        <span class="card-title black-text"><strong>Titulo do cartão</strong></span>
+                        <a href="#" class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add</i></a>
+                    </div>
 
-    <h5 class="truncate">
-        Texto grande sendo truncado industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown
-         printer took a galley of type and scrambled it to make a type specimen book.
-    </h5><br>
+                    <div class="card-content">
+                        <p>the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknow</p>
+                    </div>
 
-    <div class="row">
-        <div class="col s12 hide-on-small-only red">
-            Ocultando para despositivos móveis.
-        </div>
-        <div class="col l12 blue hide-on-med-only ">
-            Ocultando para tablets.
-        </div>
-        <div class="col l12 yellow hide-on-large-only ">
-            Ocultando para PC.            
+                    <div class="card-action">
+                        <button type="#" class="btn blue"><a href="#" class="">Link 1</a></button>
+                        <button type="#" class="btn blue"><a href="#" class="center">Link 1</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l4">
+                <h4>Cartão Horizontal.</h4>
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="img/materialize.png" alt="">
+                    </div>
+                    
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>the printing and typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s, when an unknow</p>
+                        </div>
+
+                        <div class="card-action">
+                            <button class="btn" type="btn"><a href="#">LINK 1</a></button>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col s12 m4 l4 ">
+                
+                <div class="card">
+                    <div class="card-image waves-block">
+                    <img class="activator" src="img/code.jpg">
+                    </div>
+                    <div class="card-content activator">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4 close">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            
+            </div>
 
         </div>
-    </div>
 
-    <div class="valign-wrapper">
-        <h5 class="left-align">
-            Texto sendo alinhado à esquerda.
-        </h5>
-    </div>
-    <div>
-        <h5 class="right-align">
-            Testo sendo alinhado à direita
-        </h5>
-    </div>
-    <div>
-        <h5 class="center-align">
-            Texto sendo alinhado ao centro.
-        </h5>
-    </div>
-
-    <div class="divider red"></div> <!--divide com uma linha-->
-        <div class="section"><!--apenas preenche a margem superior e inferior-->
-            <h4>Seção 1</h4>
-            <p>Está é uma seção.</p>
+        <div class="card medium"><!--podemos escolher o tamanho entre pequeno, médio e grande. -->
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#test4">Test 1</a></li>
+                <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+                <li class="tab"><a href="#test6">Test 3</a></li>
+              </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+              <div id="test4">Test 1</div>
+              <div id="test5">Test 2</div>
+              <div id="test6">Test 3</div>
+            </div>
         </div>
 
-    <div class="divider red"></div>
-        <div class="section"><!--apenas preenche a margem superior e inferior-->
-            <h4>seção 2</h4>
-            <p>Está é uma seção.</p>
+        <div class="row">
+            <div class="s12 ">
+                <div class="card-panel grey" style="margin-left: 30px; margin-right: 30px;">
+                    <span class="red-text">
+                        Cartão simples, cartão simples, cartão simples, cartão simples, cartão simples
+                    </span>
+                </div>
+            </div>
         </div>
 
-    <p class="flow-text">the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknow
-    <div class="row"><!--aqui é a "linha"-->
-        <div class="col s12 m4 l12 red"> <!-- col=colunas  s=small (tela pequenas) m=medium (telas medias, tablets) l=telas grandes (pc) -->
-        the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown
-         printer took a galley of type and scrambled it to make a type specimen book.
+        <div class="chip">
+            <img src="img/avatar_femenino.png" alt="">Ana Bianca
+            <i class="material-icons close">close</i>
         </div>
-        <div class="col s12 m4 l12 blue">
-            the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown
-         printer took a galley of type and scrambled it to make a type specimen book.
-       
-        </div>
-        <div class="col s12 m4 l12 green">
-        the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown
-         printer took a galley of type and scrambled it to make a type specimen book.
-       
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col s6 grey offset-s2"><!--offset = desloca colunas-->
-        the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown
-         printer took a galley of type and scrambled it to make a type specimen book.
-        </div>
-        <div class="col s6 pink push-s1"><!--push= pucha uma tabela-->
-        the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown
-        printer took a galley of type and scrambled it to make a type specimen book.
-        </div>
-        <div class="col s6 blue pull-s1"><!--pull= empurra uma tabela-->
-        the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown
-        printer took a galley of type and scrambled it to make a type specimen book.
-        </div>
-    </div>
 
+        <form action="#">
+            <div class="chips" id="pesquisar_dados"></div>
+            <button type="" class="btn" onclick="pesquisar_dados()">BUSCAR</button><br>
+        </form>
+
+        
+        <div class="chips chips-initial"></div>
+        <div class="chips chips-placeholder"></div>
+
+        <form action="">
+            <div class="chips chips-autocomplete"></div>
+            <button type="" class="btn">BUSCAR</button><br>
+        </form>
+        <!-- Customizable input  -->
+        <br>
+
+        <div class="row">
+            <form action="" class="col s12">
+                <div class="col s6 input-field">
+                    <i class="material-icons prefix">face</i>
+                    <input type="text" name="" id="" class="validate"><label data-success="nome válido !" for="">Seu nome</label>
+                </div>
+
+                <div class="col s6 input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" name="" id="" class="validate"> <label data-error="Email inválido." for="Email">Seu email</label>
+                </div>
+
+                <div class="col s6 input-field">
+                    <i class="material-icons prefix">textsms</i>
+                    <input type="text" name="" id="" data-length="10" class="character-counter"><label for="">Contagem de caracteres</label>
+                </div>
+
+                <div class="col s6 input-field">
+                    <i class="material-icons prefix">close</i>
+                    <input disabled type="text" name="" id=""><label for="">disabilitado</label>
+                </div>
+
+                <div class=" input-field col s12">
+                    <i class="material-icons prefix">edit</i>
+                    <textarea name="" id="" cols="30" rows="10" class="materialize-textarea materialize-red-text"></textarea><label for="">Textarea</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">textsms</i>
+                    <input type="text" name="" id="autocomplete-input" class="autocomplete"><label for="autocomplete-input">Autocomplete</label>
+                </div>
+                <br>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="1">Opção 1</option>
+                        <option value="2">Opção 2</option>
+                        <option value="3">Opção 3</option>
+                    </select><label for="">Filtre por: </label>
+                </div>
+
+                <div class="input-field col s12">
+                    <select name="" id="">
+                        
+                        <option value="1" disabled selected>Escolha o time</option>
+                        
+                        <optgroup label="Time 1">
+                            <option value="1">Time 1</option>
+                            <option value="2">Time 2</option>
+                        </optgroup>
+
+                        <optgroup label="Time 2">
+                            <option value="1">Time 1</option>
+                            <option value="2">Time 2</option>
+                        </optgroup>
+                    </select>
+                    <label for="">Grupos</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <select class="icons">
+                        <option value="" disabled selected>Escolha um perfil</option>
+                        <option value="" data-icon="img/avatar_masculino.png">perfil 1</option>
+                        <option value="" data-icon="img/avatar_femenino.png">Perfil 2</option>
+                    </select>
+                    <label for="">Perfil para Selecionar </label>
+                </div>
+
+                <div class="input-field col s12">
+                    <select multiple>
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                    <label>Materialize Multiple Select</label>
+                  </div>
+
+            </form>
+        </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer-copyright blue">
+        <h1>footer</h1>
+    </footer>
 </body>
 
-<h1>Heading h1</h1>
-<h2>Heading h2</h2>
-<h3>Heading h3</h3>
-<h4>Heading h4</h4>
-<h5>Heading h5</h5>
-
-<blockquote cite="">
-    Isto é uma citação.
-</blockquote>
-
-<img src="img/logo1.jpg" class="responsive-img circle"> <br> <!--Deixa a imagem responsiva e circular-->
-
-<!-- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.fixed-action-btn');
-            var instances = M.FloatingActionButton.init(elems, {
-              direction: 'top'
-            });
-          }); 
-</script> -->
-
-<!--O jquery tem que vim antes do JS-->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/jquery.js"></script>
 
 <!--Importando Matererialize JS framework (BAIXADO) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src="js/materialize.js"></script> <!--versão 1.0-->
+<script src="js/materialize.js"></script>
+<!--versão 1.0-->
 <script src="js/script.js"></script>
+
+<script>
+    
+</script>
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 

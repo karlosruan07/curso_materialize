@@ -5,3 +5,42 @@ p{
     font-weight: 100; /*tamanho da clareza da fonte*/
     text-align: justify;
 }
+#coracao{
+    color:red;
+}
+
+#search{
+    color: black;
+}
+
+.Xcharacter-counter{
+    color: blueviolet;
+    display: none;
+}
+
+.card-panel{
+    margin-top: 15%;
+}
+
+#login_body{
+    background-color: green;
+}
+#login_color_nav{
+    background-color: green;
+}
+#login_titulo{
+    margin-top: 50px;
+}
+#titulo_card{
+    margin-top: 10%;    
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+#card_principal{
+    margin-top: 10%;
+}
+
+
