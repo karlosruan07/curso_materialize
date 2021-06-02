@@ -95,3 +95,20 @@ $("#dataPesquisa").click(function (event) {
 $(document).ready(function(){
   $('.timepicker').timepicker();
 });
+
+//JS (courrosel ...)
+
+$(document).ready(function(){
+  $('.carousel').carousel();
+  M.AutoInit();
+  
+});
+
+$('.carousel.carousel-slider').carousel({
+  fullWidth: true
+});
+
+$('.carousel.carousel-slider').carousel({
+  fullWidth: true,
+  indicators: true
+});

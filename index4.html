@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!--Importando Matererialize CSS framework BAIXADO -->
+     <link rel="stylesheet" href="css/materialize.css">
+     <!--versão 1.0-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+ 
+     <link rel="stylesheet" href="css/custom.css">
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+ 
+     <!--Importando Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <title>forms</title>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <form class="col s12">
+                <div>
+                    <p>
+                        <label>
+                            <input type="radio" name="grupo1" class="with-gap">
+                            <span>Amarelo</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="radio" name="grupo1" id="" class="with-gap">
+                            <span>Rosa</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="radio" name="grupo1" id="" checked class="with-gap">
+                            <span>Vermelho</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="radio" name="grupo1" id="" disabled class="with-gap">
+                            <span>Desabilitado</span>
+                        </label>
+                    </p>
+                </div>
+
+                <div style="margin-top: 50px;"><!--As opções tem que esta com um grupo e com um id-->
+                    <p>
+                        <input type="radio" name="grupo2" id="corinthias" checked class="with-gap">
+                        <label for="corinthias">corinthias</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="grupo2" id="santos" class="with-gap">
+                        <label for="santos">Santos</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="grupo2" id="vasco" class="with-gap">
+                        <label for="vasco">Vasco</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="grupo2" id="disabilitado" disabled>
+                        <label for="disabilitado">disabilitado</label>
+                    </p>
+                </div>
+
+                <div class="col s6" style="margin-top: 50pt;">
+                    <p>
+                        <label>
+                            <input type="checkbox" name="" id="">
+                            <span>Opçaõ 1</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="checkbox" name="" id="">
+                            <span>Opção 2</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="checkbox" name="" id="" class="filled-in">
+                            <span>Filled-in</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="checkbox" name="" id="" checked disabled>
+                            <span>Checked</span>
+                        </label>
+                    </p>
+
+                </div>
+
+                <div class="col s6 switch" style="margin-top: 50pt;">
+                    <label>
+                        Off
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        ON
+                    </label>
+                </div>
+
+                <div class="col s6 switch">
+                    <label>
+                        ON 
+                        <input type="checkbox" disabled checked>
+                        <span class="lever"></span>
+                        Off
+                    </label>
+                </div>
+
+                <div class="col s6 input-field file-field">
+                    <div class="btn">
+                        <span><i class="material-icons">upload</i></span>
+                        <input type="file">
+                    </div>
+
+                    <div class="file-path-wrapper">
+                        <input type="text" class="file-path validate">
+                    </div>
+                </div>
+
+                <div class="col s6 input-field file-field">
+                    <div class="btn">
+                        <span><i class="material-icons">upload</i></span>
+                        <input type="file" multiple>
+                    </div>
+
+                    <div class="file-path-wrapper">
+                        <input type="text" class="file-path validate" placeholder="Anexe um ou mais arquivos ">
+                    </div>
+                </div>
+
+                <div class="col s6">
+                    <p class="range-field">
+                        <input type="range" id="teste" min="0" max="200">
+                    </p>
+                </div>
+        
+        </div>
+            
+    </main>
+<footer class="footer-copyright blue">
+    <h1>footer</h1>
+</footer>
+
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+<!--versão 1.0-->
+<script src="js/script.js"></script>
+
+</html>
