@@ -42,4 +42,23 @@ p{
     margin-top: 10%;
 }
 
+/* Js parallax */
+
+.parallax-container{
+    margin-top: 10px; /* é possivel alterar a altura e a largura do paralax */
+    
+}   
+
+/* cores waves */
+
+.waves-effect.waves-teste .waves-ripple {
+     background-color: springgreen;
+}
+
+/* slides */
+
+.slider{
+    margin-top: 10px;
+}
+
 

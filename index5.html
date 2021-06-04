@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Importando Matererialize CSS framework BAIXADO -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!--versão 1.0-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <!--Importando Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+        <div class="navbar-fixed">
+            <nav class="">
+                <div class="nav-wrapper container">
+                    <a href="#!" class="brand-logo">Logo</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+    
+                        <li>
+                            <form class="hide-on-med-and-down">
+                                <div class="input-field">
+                                    <input id="search" type="search" required placeholder="Digite para pesquisar">
+                                    <label class="label-icon" for="search"><i
+                                            class="material-icons right">search</i></label>
+                                    <i class="material-icons">close</i>
+                                </div>
+                            </form>
+                        </li>
+    
+                        <li><a href="#">Component</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">Mobile</a></li>
+    
+                        <ul class="right hide-on-med-and-down">
+    
+                            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                                    data-beloworigin="true">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+                            </li>
+                        </ul>
+                    </ul>
+    
+                </div>
+    
+                <div class="nav-content container">
+    
+                    <div class="nav-content">
+                        <span class="nav-title"></span>
+                    </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+            <li>
+                <nav>
+    
+                    <div class="nav-wrapper white z-depth-1">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons"
+                                        id="search">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </li>
+        </ul>
+    </header>
+
+    <main class="container">
+
+        <div class="row">
+            <div class="col s12">
+                <div class="carousel">
+                    <a class="carousel-item" href="#"><img src="img/code.jpg"></a>
+                    <a class="carousel-item" href="#"><img src="img/code2.jpg"></a>
+                    <a class="carousel-item" href="#"><img src="img/code3.jpg"></a>
+                </div>
+
+                <button type="" class="next" id="prox_slide">Próxima</button>
+
+            </div>
+
+            <div class="col s12">
+                <div class="carousel carousel-slider">
+                    <a class="carousel-item" href="#"><img src="img/code.jpg" ></a>
+                    <a class="carousel-item" href="#"><img src="img/code2.jpg" ></a>
+                    <a class="carousel-item" href="#"><img src="img/code3.jpg" ></a>
+                
+                
+
+                </div>
+            </div>
+        
+        </div>
+
+        
+    <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">button</a>
+        </div>
+        <div class="carousel-item red white-text" href="#one!">
+            <h2>First Panel</h2>
+            <p class="white-text">This is your first panel</p>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+            <h2>Second Panel</h2>
+            <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+            <h2>Third Panel</h2>
+            <p class="white-text">This is your third panel</p>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+            <h2>Fourth Panel</h2>
+            <p class="white-text">This is your fourth panel</p>
+        </div>
+
+
+    </div>
+        
+    <div class="row">
+        <div class="col s12 parallax-container ">
+            <div class="parallax"><img src="img/paisagem.jpg" ></div>
+        </div>
+
+        <div class="col s12 parallax-container">
+            <div class="parallax"><img src="img/paisagem2.jpg" ></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s2">
+            <button type="" class="btn waves-effect waves-light">Button</button>
+        </div>
+
+        <div class="col s2">
+            <a href="#!" class="left waves-effect waves-circle waves-light btn-floating secondary-content">
+                <i class="material-icons">add</i>
+            </a>
+        </div>
+
+        <!--Dropdown-->
+
+        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'><i class="material-icons">account_box</i><i class="material-icons">arrow_drop_down</i></a>
+            <i class="material-icons">add</i>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#!">three</a></li>
+          <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+          <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+        
+        </ul>
+
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+        <img class="materialboxed" data-caption="Hello Word !" width="250" src="img/espaco.jpg">
+        </div>
+
+        <div class="col s12">
+            
+<div class="slider">
+    <ul class="slides">
+        <li>
+            <img src="img/paisagem2.jpg"> <!-- random image -->
+
+
+            <div class="caption center-align">
+                <h3><strong>This is our big Tagline!</strong></h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        <li>
+            <img src="img/paisagem.jpg"> <!-- random image -->
+            <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="img/escadas.jpg"> <!-- random image -->
+            <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="img/espaco.jpg"> <!-- random image -->
+            <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</div>
+
+</div>
+
+
+</main>
+
+    <footer class="footer-copyright red"><h1>Footer</h1></footer>
+
+</body>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <!--versão 1.0-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+        
+    </script>
+
+
+
+</html>

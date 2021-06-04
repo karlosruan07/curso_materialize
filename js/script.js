@@ -1,7 +1,9 @@
 //navbar
 
 $(document).ready(function () {
-  $(".dropdown-trigger").dropdown();
+  $(".dropdown-trigger").dropdown({
+
+  });
 });
 
 $(document).ready(function(){
@@ -99,16 +101,50 @@ $(document).ready(function(){
 //JS (courrosel ...)
 
 $(document).ready(function(){
-  $('.carousel').carousel();
+  $('.carousel').carousel({
+    indicators : true,
+    
+  });
   M.AutoInit();
   
 });
 
 $('.carousel.carousel-slider').carousel({
-  fullWidth: true
+  fullWidth: true,
+  indicators : true
 });
 
 $('.carousel.carousel-slider').carousel({
   fullWidth: true,
   indicators: true
 });
+
+/*$('.next').click(function() {
+  $('.carousel').carousel('next') 
+})*/
+
+window.document.getElementById('prox_slide').addEventListener('click', function(){
+  $('.carousel').carousel('next')
+})
+
+//parallax
+
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+
+//materialboxed
+
+$(document).ready(function(){
+  $('.materialboxed').materialbox();
+});
+
+//slides
+
+$(document).ready(function(){
+  $('.slider').slider();
+});
+
+
+
+
