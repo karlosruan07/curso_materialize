@@ -52,13 +52,17 @@ p{
 /* cores waves */
 
 .waves-effect.waves-teste .waves-ripple {
-     background-color: springgreen;
+     background-color: rgba(0, 47, 255, 0.877);
 }
 
 /* slides */
 
 .slider{
     margin-top: 10px;
+}
+
+.pushpin{
+    position: relative;
 }
 
 

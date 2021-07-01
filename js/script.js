@@ -1,3 +1,6 @@
+
+M.AutoInit();
+
 //navbar
 
 $(document).ready(function () {
@@ -105,7 +108,6 @@ $(document).ready(function(){
     indicators : true,
     
   });
-  M.AutoInit();
   
 });
 
@@ -145,6 +147,58 @@ $(document).ready(function(){
   $('.slider').slider();
 });
 
+// collapsible
+
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
+            
+//Modal
+
+$(document).ready(function(){
+  $('.modal').modal();
+});
+
+//toast
+
+function botao2() {
+  M.toast({html: 'I am a toast!'})
+}
+
+function botao3() {
+  var toastHTML = '<span>I am toast content</span><a href="https://youtube.com"> <button class="btn-flat toast-action">Undo</button></a>';
+  M.toast({html: toastHTML, classes:'rounded'});
+}
+
+function botao4() {
+  var toastHTML = '<span>I am toast content</span>';
+  M.toast({html: toastHTML, classes:'rounded', activationPercent : 5 , completeCallback: function(){
+    window.location = "https://youtube.com"
+  }});
+}
+
+//tooltip
+
+function tooltip() {
+  //alert('weofidsnklwfodns')
+  $('.tooltipped').tooltip();
+}
+
+//scrollspy
+
+$(document).ready(function(){
+  $('.scrollspy').scrollSpy();
+});   
+
+//tabs
+
+$(document).ready(function(){
+  $('ul.tabs').tabs({
+    swipeable : true,
+  });
+});
 
 
+
+      
 
